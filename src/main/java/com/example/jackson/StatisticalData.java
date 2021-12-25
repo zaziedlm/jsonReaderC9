@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "RESULT_INF",
     "TABLE_INF",
-    "CLASS_INF",
+//    "CLASS_INF",
     "DATA_INF"
 })
 @Generated("jsonschema2pojo")
@@ -25,8 +25,8 @@ public class StatisticalData {
     private ResultInf resultInf;
     @JsonProperty("TABLE_INF")
     private TableInf tableInf;
-    @JsonProperty("CLASS_INF")
-    private ClassInf classInf;
+    // @JsonProperty("CLASS_INF")
+    // private ClassInf classInf;
     @JsonProperty("DATA_INF")
     private DataInf dataInf;
     @JsonIgnore
@@ -52,15 +52,15 @@ public class StatisticalData {
         this.tableInf = tableInf;
     }
 
-    @JsonProperty("CLASS_INF")
-    public ClassInf getClassInf() {
-        return classInf;
-    }
+    // @JsonProperty("CLASS_INF")
+    // public ClassInf getClassInf() {
+    //     return classInf;
+    // }
 
-    @JsonProperty("CLASS_INF")
-    public void setClassInf(ClassInf classInf) {
-        this.classInf = classInf;
-    }
+    // @JsonProperty("CLASS_INF")
+    // public void setClassInf(ClassInf classInf) {
+    //     this.classInf = classInf;
+    // }
 
     @JsonProperty("DATA_INF")
     public DataInf getDataInf() {

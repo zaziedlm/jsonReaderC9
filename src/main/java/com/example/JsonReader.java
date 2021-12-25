@@ -28,7 +28,10 @@ public class JsonReader
         // 読み取ったデータから必要なデータ部を取得します
         List<Value> getVal = data.getGetStatsData().getStatisticalData().getDataInf().getValue();
         
-        
+        getVal.stream().filter(i -> (i.getTab().equals("33")))
+                        .forEach(i -> System.out.println(i.get$()));
+        getVal.stream().filter(i -> (i.getTab().equals("40")))
+                        .forEach(i -> System.out.println(i.get$()));
         
     }
 }
